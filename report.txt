@@ -1,0 +1,26 @@
+Title: Real-Time Hand Tracking with Danger Boundary Detection
+
+Objective:
+To detect user's hand and trigger warnings when hand reaches virtual danger zone using real-time camera feed without pose estimation APIs.
+
+Method:
+- HSV color segmentation used for hand tracking
+- Contour extraction + image moments to detect hand center
+- Euclidean distance measured from virtual object
+- SAFE, WARNING, DANGER states based on threshold
+
+Results:
+- Achieves > 25 FPS on CPU
+- Accurate distance detection and alert switching
+- Shows visible "DANGER DANGER" warning
+
+Conclusion:
+Classical computer vision can efficiently achieve interaction tracking without models like MediaPipe or OpenPose.
+
+Future Scope:
+- Skin segmentation instead of colored marker
+- Kalman filter stabilization
+- Gesture recognition input
+
+Developer:
+Gouri Katre
