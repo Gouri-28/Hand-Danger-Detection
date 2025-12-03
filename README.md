@@ -15,4 +15,5 @@ A real-time computer vision prototype that detects hand position and warns when 
 ## How to Run
 
 pip install -r requirements.txt
+
 python hand_danger_poc.py
